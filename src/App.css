@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+/* Container for the application */
+.App {
+  text-align: center;
+  padding: 20px;
+  /* max-width: 600px; */
+  /* margin: auto; */
+  background-image: linear-gradient(to right, #fff , rgb(159, 240, 233));
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  min-height: 100vh;
+}
+/* Main heading style */
+h1 {
+  color: #111b11;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+/* Input styles */
+
+input {
+  width: 30%;
+  background-color:#c8eaf3e1 ;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  /* color: #0c7febf6; */
+
+}
+/* Button styles */
+button {
+  width: 20%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  /* margin: 8px 0; */
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Ordered list styles */
+
+.ol-list {
+  padding: 0;
+  margin: 0;
+  /* list-style-position: inside; */
+  list-style-type: decimal;
+}
+/* List item styles */
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: transparent;
+  margin-bottom: 5px;
+}
+
+
+/* Styles for completed tasks */
+
+li.completed span {
+  list-style-type: disc;
+  text-decoration: line-through;
+  color: #a89d9dec;
+}
+/* List item input styles */
+li input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Button styles within list items */
+
+li button {
+  width: auto;
+  padding: 8px 12px;
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+
+/* Edit button styles */
+li button.edit-btn {
+  background-color: transparent;
+  color: #fb8c00;
+  /* outline: #fb8c00; */
+  border-color: #fb8c00;
+  border: 1px solid;
+}
+
+li button.edit-btn:hover {
+  background-color: #fb8c00;
+  color: white;
+}
+
+li button.delete-btn {
+  color: #f44336;
+  background-color: transparent;
+  border-color: #f44336;
+  border: 1px solid;
+}
+
+li button.delete-btn:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+li button.complete-btn {
+  color: #1573ee;
+  background-color: transparent;
+  border-color: #155fff;
+  border: 1px solid;
+}
+
+li button.complete-btn:hover {
+  background-color: #1e88e5;
+  color: white;
+}
+
+/* Styles for the span element within list items */
+
+li span {
+  /* list-style-type: disc; */
+  font-size: 16px;
+  font-weight: bold;
+  flex: 1;
+  margin-right: 10px;
+  text-align: start;
+}
+/* Modal background styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Responsive styles */
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  input, button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  li {
+    /* color: #f44336; */
+    list-style-type: disc;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    width: 100%;
+    margin-top: 5px;
+  }
+  li span {
+  /* text-align: center; */
+  align-self: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+}
