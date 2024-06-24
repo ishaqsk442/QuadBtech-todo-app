@@ -2,6 +2,8 @@
 
 This is a simple To-Do application built with React and Redux.
 
+Netlify Link : https://ishaq-shaik-quadb-tech-todo.netlify.app/
+
 ## Setup
 
 1. Clone the repository:
@@ -9,6 +11,7 @@ This is a simple To-Do application built with React and Redux.
 
 
 git clone https://github.com/yourusername/my-todo-app.git
+
 cd my-todo-app
 
 
