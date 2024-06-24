@@ -56,7 +56,7 @@ button:hover {
 
 /* Ordered list styles */
 
-.ol-list {
+ol{
   padding: 0;
   margin: 0;
   /* list-style-position: inside; */

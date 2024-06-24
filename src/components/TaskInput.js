@@ -16,14 +16,20 @@ const TaskInput = () => {
   };
 
   return (
-    <div>
-      <input
-        type="text"
+      <div>
+          <form onSubmit={handleAddTask}>
+              <input
+              type="text"
+              placeholder='Add Your Tasks'
         value={task}
         onChange={(e) => setTask(e.target.value)}
-        onKeyPress={(e) => e.key === 'Enter' ? handleAddTask() : null}
+              onKeyPress={(e) => e.key === 'Enter' ? handleAddTask() : null}
+              required
       />
-      <button onClick={handleAddTask}>Add Task</button>
+      <button type="submit">Add Task</button>
+
+          </form>
+      
     </div>
   );
 };
